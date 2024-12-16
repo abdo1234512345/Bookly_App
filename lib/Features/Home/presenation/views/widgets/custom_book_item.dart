@@ -37,11 +37,11 @@ class _CustomBookImageState extends State<CustomBookImage> {
           GoRouter.of(context).push(AppRouter.KBookDetailsView);
         },
         child: Skeletonizer(
-          enabled: isLoading, // عرض الهيكل العظمي أثناء التحميل
+          enabled: isLoading,
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
-              color: isLoading ? Colors.grey[300] : null, // لون الهيكل العظمي
+              color: isLoading ? Colors.grey[300] : null,
               image: isLoading
                   ? null
                   : DecorationImage(
